@@ -1,6 +1,8 @@
 import React from 'react'
 import AppScroll from '../../../../../components/app-scroll'
+import './style.scss'
 export default (props)=> {  
+    console.log(props.movieList);
     return(
         <AppScroll className='menu-list'>
             {
@@ -23,7 +25,7 @@ export default (props)=> {
                         <span className={item.globalReleased ? 'red':'blue'}>
                             {item.globalReleased ? '购票':'预售'}
                         </span>
-                    </div>
+                </div>
             </div>
         )
         }

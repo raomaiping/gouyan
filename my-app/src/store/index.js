@@ -2,9 +2,11 @@ import {createStore,combineReducers,applyMiddleware,compose} from 'redux'
 import thunk from 'redux-thunk'
 import cityList from './modules/cityList'
 import movieList from './modules/movie'
+import searchList from './modules/searchList'
 const reducer = combineReducers({
     cityList,
-    movieList
+    movieList,
+    searchList
 });
 //获得redux浏览器的谷歌开发工具
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
